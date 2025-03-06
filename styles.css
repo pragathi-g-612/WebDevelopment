@@ -1,0 +1,216 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f9fa;
+    background-image: url('back.jpeg'); /* Add your background image here */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Center the background image */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+    overflow-y: auto; /* Enables scrolling */
+}
+
+/* Header */
+header {
+    background: rgba(0, 51, 102, 0.8); /* Dark Blue with transparency */
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Yellow */
+}
+
+/* Sections */
+.hero, .about, .features, .products {
+    padding: 50px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: rgba(224, 231, 255, 0.9); /* Light Blue with transparency */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Section (optional) */
+.hero {
+    background-color: rgba(224, 231, 255, 0.8); /* Light blue with transparency for a smoother look */
+}
+
+h2 {
+    color: #003366;
+}
+
+/* Shop Products Section */
+.products {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px; /* Ensure padding from sides */
+    gap: 20px; /* Space between columns */
+    flex-wrap: wrap; /* Ensures the products wrap on smaller screens */
+}
+
+/* Column styling */
+.product-column {
+    width: 48%; /* Each column will take up 48% of the page width */
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Space between product cards */
+}
+
+/* Product Cards */
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%; /* Ensures product card is responsive */
+    max-width: 300px;
+    border: 3px solid #003366; /* Blue Border */
+    margin: 0 auto; /* Center the product cards */
+}
+
+.product h2 {
+    color: #003366;
+}
+
+.product p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcc00; /* Yellow */
+}
+
+/* Buttons */
+button {
+    background: #ffcc00;
+    color: #003366;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #ff9900; /* Darker Yellow */
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Textarea Styles */
+textarea {
+    width: 80%;  /* Adjust width to make it fit the layout */
+    max-width: 600px;  /* Limit the max-width */
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #003366;  /* Matching the blue border */
+    resize: vertical;  /* Allow vertical resizing */
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  /* Add shadow like other elements */
+}
+
+/* Centering the textarea */
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    margin: 20px;
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    color: #003366;
+}
+
+.contact h2 {
+    color: #003366;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    color: #003366;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #003366;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form button {
+    background: #ffcc00;
+    color: #003366;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Example: Change the "Your cart is empty" text to white */
+.cart-message {
+    color: white; /* Changes text color to white */
+}
+.about-us {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;  /* You can adjust the width as per your needs */
+}
